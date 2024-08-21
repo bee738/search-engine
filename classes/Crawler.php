@@ -184,7 +184,7 @@ class Crawler
     private function parseYouTubeVideo($url)
     {
         $videoId = $this->getYouTubeVideoId($url);
-        $apiKey = 'AIzaSyAwdubSlnYr7aCeNe3CC9lEetC88T9ON3E';
+        $apiKey = '';
         $apiUrl = "https://www.googleapis.com/youtube/v3/videos?id=$videoId&key=$apiKey&part=snippet";
 
         $data = file_get_contents($apiUrl);
